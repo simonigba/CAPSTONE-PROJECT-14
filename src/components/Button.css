@@ -1,0 +1,24 @@
+.custom-btn {
+  /* Colors & Background */
+  background-color: #1c52b3; /* A nice royal blue matching your image */
+  color: #ffffff; /* White text */
+  
+  /* Shape & Size */
+  padding: 12px 24px; /* Space inside the button (top/bottom left/right) */
+  border-radius: 8px; /* The rounded corners */
+  border: none; /* Removes the ugly default browser border */
+  
+  /* Typography (Font) */
+  font-size: 16px;
+  font-weight: 600; /* Makes the text slightly bold like the image */
+  font-family: inherit; /* Makes sure it uses the same font as your app */
+  
+  /* Interactions */
+  cursor: pointer; /* Turns the mouse into a pointing hand when hovering */
+  transition: background-color 0.2s ease; /* Smooth fade when hovering */
+}
+
+/* Add a subtle hover effect so it feels interactive */
+.custom-btn:hover {
+  background-color: #15408f; /* A slightly darker blue for the hover state */
+}
