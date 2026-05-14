@@ -8,12 +8,8 @@ return (
 <header className="ader">
 <div className="navbar">
 <a href="/">
-<img
-src="https://res.cloudinary.com/dva4kkwec/image/upload/v1778449959/Logo_gl7yjh.png"
-width="auto"
-height="50px"
-margin-top="20px"
-alt="logo"
+<img className="logo"
+src="https://res.cloudinary.com/dva4kkwec/image/upload/v1778449959/Logo_gl7yjh.png" alt="logo"
 />
 </a>
 </div>

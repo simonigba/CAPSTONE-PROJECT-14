@@ -5,8 +5,15 @@ box-sizing: border-box;
 }
 
 body {
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.logo {
+  width: "auto";
+  height: "50px";
+  margin-top: "20px";
+  padding-left: 100px;
 }
 
 /* Header */
@@ -29,12 +36,13 @@ min-height: 75vh;
 align-items: center;
 background-color: #051540;
 padding-bottom: 50px;
+padding-left: 110px;
 }
 
 .header {
 display: flex;
 max-width: 1300px;
-margin: 0 auto;
+margin: 1 auto;
 align-items: center;
 width: 100%;
 justify-content: space-between;
@@ -70,7 +78,7 @@ justify-content: flex-end;
 }
 
 .header-image img {
-width: 100%;
+width: 80%;
 max-width: 644px;
 filter: drop-shadow(0 0 40px rgba(0, 100, 255, 0.6));
 animation: float 6s ease-in-out infinite;
@@ -151,7 +159,7 @@ margin-bottom: 20px;
 }
 
 .header-image img {
-max-width: 300px;
+width: 300px;
 margin: 0 auto;
 }
 
