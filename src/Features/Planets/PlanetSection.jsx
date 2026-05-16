@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./PlanetSection.css";
-import PlanetImages from "../utils/PlanetImages";
+import PlanetImages from "../../utils/PlanetImages";
 
 function PlanetSection() {
   const [planets, setPlanets] = useState([]);

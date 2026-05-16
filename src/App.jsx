@@ -1,6 +1,7 @@
-import Header from './components/Header'
-import PlanetSection from './components/PlanetSection'
-import VideoSection from './components/VideoSection'
+import Header from './Features/Headers/Header'
+import PlanetSection from './Features/Planets/PlanetSection'
+import VideoSection from './Features/Videos/VideoSection'
+import ContactForm from './Features/Contacts/ContactForm'
 // import Footer from './components/Footer'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <VideoSection />
       <PlanetSection />
+      <ContactForm />
       
       {/* <Footer /> */}
     </div>

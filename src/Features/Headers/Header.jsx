@@ -1,5 +1,5 @@
 import "./Header.css";
-import Button from "./Button";
+import Button from "../../Components/button";
 
 function Header() {
   return (
@@ -34,9 +34,9 @@ function Header() {
               the solar system in a clear, data-driven way.
             </p>
 
-            <div class="hero-buttons">
+            <div className="hero-buttons">
               <Button>Explore the Data</Button>
-              <a href="#form" class="btn secondary">Contact Us</a>
+              <a href="#form" className="btn secondary">Contact Us</a>
             </div>
           </div>
 
