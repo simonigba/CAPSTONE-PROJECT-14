@@ -2,14 +2,14 @@ import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import "./FactsSection.css";
 
 function FactsSection() {
-  // Planetary facts data matching the mockup exactly (uses identical placeholder values)
+  // Authentic planetary facts data sourced directly from official NASA Planetary Fact Sheets
   const planetaryFacts = [
     {
       category: "Terrestrial Planets",
       subcategory: null,
       name: "Mercury",
       mass: "0.330",
-      diameter: "4,878",
+      diameter: "4,879",
       density: "5427",
       gravity: "3.7",
     },
@@ -17,73 +17,73 @@ function FactsSection() {
       category: "Terrestrial Planets",
       subcategory: null,
       name: "Venus",
-      mass: "0.330",
-      diameter: "4,878",
-      density: "5427",
-      gravity: "3.7",
+      mass: "4.87",
+      diameter: "12,104",
+      density: "5243",
+      gravity: "8.9",
     },
     {
       category: "Terrestrial Planets",
       subcategory: null,
       name: "Earth",
-      mass: "0.330",
-      diameter: "4,878",
-      density: "5427",
-      gravity: "3.7",
+      mass: "5.97",
+      diameter: "12,756",
+      density: "5514",
+      gravity: "9.8",
     },
     {
       category: "Terrestrial Planets",
       subcategory: null,
       name: "Mars",
-      mass: "0.330",
-      diameter: "4,878",
-      density: "5427",
+      mass: "0.642",
+      diameter: "6,792",
+      density: "3933",
       gravity: "3.7",
     },
     {
       category: "Jovian Planets",
       subcategory: "Gas Giants",
       name: "Jupiter",
-      mass: "0.330",
-      diameter: "4,878",
-      density: "5427",
-      gravity: "3.7",
+      mass: "1,898",
+      diameter: "142,984",
+      density: "1326",
+      gravity: "23.1",
     },
     {
       category: "Jovian Planets",
       subcategory: "Gas Giants",
       name: "Saturn",
-      mass: "0.330",
-      diameter: "4,878",
-      density: "5427",
-      gravity: "3.7",
+      mass: "568",
+      diameter: "120,536",
+      density: "687",
+      gravity: "9.0",
     },
     {
       category: "Jovian Planets",
       subcategory: "Ice Giants",
       name: "Uranus",
-      mass: "0.330",
-      diameter: "4,878",
-      density: "5427",
-      gravity: "3.7",
+      mass: "86.8",
+      diameter: "51,118",
+      density: "1271",
+      gravity: "8.7",
     },
     {
       category: "Jovian Planets",
       subcategory: "Ice Giants",
       name: "Neptune",
-      mass: "0.330",
-      diameter: "4,878",
-      density: "5427",
-      gravity: "3.7",
+      mass: "102",
+      diameter: "49,528",
+      density: "1638",
+      gravity: "11.0",
     },
     {
       category: "Dwarf Planets",
       subcategory: null,
       name: "Pluto",
-      mass: "0.330",
-      diameter: "4,878",
-      density: "5427",
-      gravity: "3.7",
+      mass: "0.0146",
+      diameter: "2,370",
+      density: "2095",
+      gravity: "0.62",
     },
   ];
 
@@ -98,7 +98,7 @@ function FactsSection() {
 
         {/* Small subtitle right above the table matching the mockup */}
         <p className="table-caption">
-          Data about the planets of our solar system (Planetary facts taken from NASA)
+          Data about the planets of our solar system (Planetary facts sourced from NASA's official Planetary Fact Sheet)
         </p>
 
         {/* Premium responsive table wrapper */}
@@ -109,10 +109,10 @@ function FactsSection() {
                 {/* Spans the Category and Subcategory columns */}
                 <th colSpan="2" className="empty-header-cell"></th>
                 <th>Name</th>
-                <th>Mass (10 24kg)</th>
+                <th>Mass (10²⁴ kg)</th>
                 <th>Diameter (km)</th>
-                <th>Density (kg/m3)</th>
-                <th>Gravity (m/s2)</th>
+                <th>Density (kg/m³)</th>
+                <th>Gravity (m/s²)</th>
               </tr>
             </thead>
             <tbody>
