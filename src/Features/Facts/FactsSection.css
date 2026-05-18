@@ -1,0 +1,130 @@
+.facts-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.facts-section .container {
+  width: 100%;
+}
+
+/* Secondary Table Caption Header Style */
+.table-caption {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #121212;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Premium Responsive Table Container */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2ebf9;
+  background-color: #ffffff;
+}
+
+/* Table Style */
+.facts-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.95rem;
+  min-width: 800px; /* Ensures readable structure on mobile screens */
+}
+
+/* Header Columns */
+.facts-table thead th {
+  background-color: #1f4fb5;
+  color: #ffffff;
+  padding: 18px 15px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  vertical-align: middle;
+}
+
+/* Header Empty Top Left Cell */
+.facts-table thead th.empty-header-cell {
+  background-color: #1f4fb5;
+}
+
+/* Left-side Category Spanned Cells */
+.facts-table td.category-cell {
+  background-color: #cee0ff;
+  color: #121212;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 20px 15px;
+  vertical-align: middle;
+  border: 2px solid #ffffff; /* Crisp white borders to separate categories */
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Subcategory category cells (e.g. Gas Giants, Ice Giants) */
+.facts-table td.subcategory-cell {
+  background-color: #dbe7ff;
+}
+
+/* Planet Name Column Cells */
+.facts-table td.planet-name-cell {
+  font-weight: 600;
+  color: #2c3e50;
+  background-color: inherit;
+}
+
+/* Regular Body Data Cells */
+.facts-table tbody td {
+  padding: 16px 15px;
+  color: #4a5568;
+  vertical-align: middle;
+  border: 1px solid #eef2ff; /* Very light subtle borders */
+}
+
+/* Alternating Row Shading for the Data columns */
+.facts-table tbody tr:nth-child(even) {
+  background-color: #f7faff;
+}
+
+.facts-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Hover effects for premium feeling */
+.facts-table tbody tr:hover td:not(.category-cell) {
+  background-color: #eef5ff;
+  color: #1f4fb5;
+}
+
+/* Transitions for elegant feel */
+.facts-table tbody td {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Mobile & Tablet Optimizations */
+@media (max-width: 768px) {
+  .facts-section {
+    padding: 40px 15px;
+  }
+  
+  .table-caption {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .facts-table td, .facts-table th {
+    padding: 12px 10px;
+    font-size: 0.85rem;
+  }
+
+  .facts-table td.category-cell {
+    font-size: 0.85rem;
+    padding: 12px 8px;
+  }
+}
