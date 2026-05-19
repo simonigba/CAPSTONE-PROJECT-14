@@ -1,11 +1,11 @@
 import "./Header.css";
-import Button from "../../Components/button";
+import Button from "../../Components/Extra-Button/Button";
 
 function Header() {
   return (
     <>
       {/* Header */}
-      <header className="ader">
+      <header className="header">
         <div className="navbar">
           <a href="/">
             <img
