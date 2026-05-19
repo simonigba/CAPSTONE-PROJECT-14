@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import "./ContactForm.css";
 
-import Button from "../../Components/Exra-Button/Button";
+import Button from "../../Components/Extra-Button/Button";
 import SectionHeader from "../../Components/SectionHeader/SectionHeader";
 
 // --- SANITIZER: escapes HTML special characters to prevent XSS injection ---
