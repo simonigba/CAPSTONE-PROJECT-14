@@ -1,5 +1,6 @@
 import "./Header.css";
 import Button from "../../Components/Extra-Button/Button";
+import { scrollToSection } from "../../utils/ScrollSection";
 
 function Header() {
   return (
@@ -22,7 +23,6 @@ function Header() {
       {/* Hero Section */}
       <section className="head">
         <div className="header">
-
           <div className="header-content">
             <h1>
               Explore Our Solar <br /> System Through Data
@@ -35,8 +35,15 @@ function Header() {
             </p>
 
             <div className="hero-buttons">
-              <Button>Explore the Data</Button>
-              <a href="#form" className="btn secondary">Contact Us</a>
+              <Button
+                text="Explore Data" 
+                onClick={() => scrollToSection("data")}
+              />
+              <Button
+                text="Contact Us"
+                onClick={() => scrollToSection("contact")}
+                variant="secondary"
+              />
             </div>
           </div>
 
@@ -46,11 +53,10 @@ function Header() {
               alt="Earth Globe"
             />
           </div>
-
         </div>
       </section>
     </>
   );
 }
 
-export default Header
+export default Header;
