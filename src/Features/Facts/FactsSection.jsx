@@ -1,4 +1,4 @@
-import SectionHeader from "../../components/SectionHeader/SectionHeader";
+import SectionHeader from "../../Components/SectionHeader/SectionHeader";
 import "./FactsSection.css";
 
 function FactsSection() {
