@@ -7,7 +7,7 @@ function Footer() {
                 <h3>About</h3>
                 <p>
                     <ul>
-                        <li>Agbaje, put your name here after cloning</li>
+                        <li>Agbaje</li>
                         <li>Simon</li>
                         <li>Eddie</li>
                     </ul>

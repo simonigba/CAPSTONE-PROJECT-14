@@ -16,14 +16,14 @@ footer {
     height: 307px;
     background-color: #051540;
     color: #FFFFFF;
-    padding: 0 119px;
+    padding: 0 50px;
 }
 
 .about {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 45px;
     align-items: start;
 }
