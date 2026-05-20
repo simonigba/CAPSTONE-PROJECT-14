@@ -257,7 +257,7 @@ function ContactForm() {
           )}
           {status.error && <div className="error-message">{status.error}</div>}
 
-          <Button text="Submit" type="submit" loading={status.loading} />
+          <Button text="Submit" showArrow ={true} type="submit" loading={status.loading} />
         </form>
       </div>
     </section>
