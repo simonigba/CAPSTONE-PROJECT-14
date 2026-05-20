@@ -3,7 +3,7 @@ import PlanetSection from './Features/Planets/PlanetSection'
 import VideoSection from './Features/Videos/VideoSection'
 import FactsSection from './Features/Facts/FactsSection'
 import ContactForm from './Features/Contacts/ContactForm'
-// import Footer from './components/Footer'
+import Footer from './Features/Footer/Footer'
 
 function App() {
   return (
@@ -13,8 +13,7 @@ function App() {
       <PlanetSection />
       <FactsSection />
       <ContactForm />
-      
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
