@@ -19,8 +19,7 @@ function VideoSection() {
       <div className="video-wrapper">
         <video className="video" autoPlay muted loop playsInline>
           <source
-            src="https://res.cloudinary.com/dm0tdhw88/video/upload/v1770056764/12286635-hd_1920_1028_60fps_zt0cph.mp4"
-            type="video/mp4"
+            src="https://res.cloudinary.com/dm0tdhw88/video/upload/v1779316885/WhatsApp_Video_2026-05-20_at_11.38.27_PM_1_tmvj2y.mp4"
           />
           Your browser does not support video.
         </video>
