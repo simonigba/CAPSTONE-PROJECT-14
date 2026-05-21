@@ -10,9 +10,15 @@ function Footer() {
                         <li>Agbaje</li>
                         <li>Simon</li>
                         <li>Eddie</li>
+<<<<<<< HEAD
                         <li>Wali David</li>
                         <li>Keke Otis</li>
                         <li>Francis Samuel</li>
+=======
+                         <li>Wali David</li>
+                         <li>Keke Otis</li>
+                         <li>Olanrewaju Ogunkoya</li>
+>>>>>>> c0e6365bc065765d5ce4b4ddbf06fb16b10d776c
                     </ul>
                 </p>
             </div>
