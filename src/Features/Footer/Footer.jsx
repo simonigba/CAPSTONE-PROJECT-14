@@ -5,16 +5,12 @@ function Footer() {
         <footer>
             <div className="about">
                 <h3>About</h3>
-                <p>
-                    <ul>
-                        <li>Agbaje</li>
-                        <li>Simon</li>
-                        <li>Eddie</li>
-                         <li>Wali David</li>
-                         <li>Keke Otis</li>
-                         <li>Olanrewaju Ogunkoya</li>
-                    </ul>
-                </p>
+                  <p>We are a team of passionate planetary science enthusiasts...</p>
+                  <p>Names:
+                  <ul>
+                    <li>Agbaje | Simon | Eddie| Wali | Keke | Francis | Wali | Olanrewaju</li>
+                  </ul>
+                  </p>
             </div>
 
             <hr />
