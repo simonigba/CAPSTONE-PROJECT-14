@@ -11,6 +11,7 @@ function Footer() {
                         <li>Simon</li>
                         <li>Eddie</li>
                          <li>Wali David</li>
+                         <li>Keke Otis</li>
                     </ul>
                 </p>
             </div>
