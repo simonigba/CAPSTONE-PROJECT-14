@@ -1,10 +1,10 @@
 const PlanetImages = {
   Mercury:
-    "https://res.cloudinary.com/dm0tdhw88/image/upload/v1770062528/simon-lee-ozVwowRmSwM-unsplash_iq9r6s.jpg",
+    "https://res.cloudinary.com/dpolshorx/image/upload/v1779368665/WhatsApp_Image_2026-05-20_at_11.10.43_PM_eepaqe.jpg",
   Venus:
     "https://res.cloudinary.com/dm0tdhw88/image/upload/v1770056765/nasa-vhSz50AaFAs-unsplash_nacbxq.jpg",
   Earth:
-    "https://res.cloudinary.com/dm0tdhw88/image/upload/v1770062793/075cfe8711f093d2ee4330cfa37d385003066f0a_1_wtpcld.png",
+    "https://res.cloudinary.com/dpolshorx/image/upload/v1779368665/WhatsApp_Image_2026-05-20_at_11.10.42_PM_3_r7mah2.jpg",
   Mars: "https://res.cloudinary.com/dm0tdhw88/image/upload/v1770056765/nasa-N3BQHYOVq5E-unsplash_wb8lrd.jpg",
   Jupiter:
     "https://res.cloudinary.com/dm0tdhw88/image/upload/v1770056765/planet-volumes-awYEQyYdHVE-unsplash_1_cdhgv9.jpg",

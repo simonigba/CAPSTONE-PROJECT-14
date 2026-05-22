@@ -71,8 +71,7 @@ function ContactForm() {
 
   const submitting = useRef(false);
 
-  const API_ENDPOINT =
-    "https://corsproxy.io/?https://whitebricks.com/tsacademy.php";
+  const API_ENDPOINT = "/api/submit";
 
   // Validates a single field and updates its error message
   function validateField(name, value) {
@@ -257,7 +256,7 @@ function ContactForm() {
           )}
           {status.error && <div className="error-message">{status.error}</div>}
 
-          <Button text="Submit" type="submit" loading={status.loading} />
+          <Button text="Submit" showArrow ={true} type="submit" loading={status.loading} />
         </form>
       </div>
     </section>

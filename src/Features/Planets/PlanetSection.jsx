@@ -35,7 +35,7 @@ function PlanetSection() {
   }, []);
 
   return (
-    <section className="planet-section">
+    <section id="data" className="planet-section">
       <div className="planet-header">
         <h2>Visualizing the Differences Between Planets</h2>
 
