@@ -109,7 +109,7 @@
 /* Mobile & Tablet Optimizations */
 @media (max-width: 768px) {
   .facts-section {
-    padding: 40px 15px;
+    display: none;
   }
   
   .table-caption {
