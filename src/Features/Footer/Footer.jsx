@@ -8,7 +8,7 @@ function Footer() {
                   <p>We are a team of passionate planetary science enthusiasts...</p>
                   <p>Names:
                   <ul>
-                    <li>Agbaje | Simon | Eddie| Wali | Keke | Francis | Wali | Olanrewaju | Irene</li>
+                    <li>Agbaje | Simon | Eddie| Wali | Keke | Francis | Wali | Olanrewaju | Irene | Olamiyo</li>
                   </ul>
                   </p>
             </div>
