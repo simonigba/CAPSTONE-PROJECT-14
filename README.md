@@ -1,65 +1,58 @@
 # Capstone Project
 
-A React-based web application featuring sections for heroes, planets, video, facts, and contact — built with Vite and organized using a feature-based architecture.
+A React + Vite web application built with a component-first structure and feature-based UI sections for planets, videos, facts, contacts, and footer content.
 
 ---
 
 ## Project Structure
 
 ```
-capstone-project/
-│
+CAPSTONE-PROJECT-14/
+├── public/
+│   └── _redirects
 ├── src/
-│   ├── features/
-│   │   ├── hero/
-│   │   │   ├── HeroSection.jsx
-│   │   │   └── hero.css
-│   │   │
-│   │   ├── planets/
-│   │   │   ├── api/
-│   │   │   │   └── planetApi.js
-│   │   │   ├── hooks/
-│   │   │   │   └── usePlanets.js
-│   │   │   ├── pages/
-│   │   │   │   └── PlanetPage.jsx
-│   │   │   ├── services/
-│   │   │   │   └── planetService.js
-│   │   │   └── utils/
-│   │   │       └── formatDistance.js
-│   │   │
-│   │   ├── video/
-│   │   │   └── VideoSection.jsx
-│   │   │
-│   │   ├── facts/
-│   │   │   └── FactsSection.jsx
-│   │   │
-│   │   └── contact/
-│   │       ├── ContactSection.jsx
-│   │       ├── validation.js
-│   │       └── contactService.js
-│   │
-│   ├── hooks/
-│   │   ├── useScrollToSection.js
-│   │   └── useFetch.js
-│   │
-│   ├── services/
-│   │   └── axios.js
-│   │
-│   ├── utils/
-│   │   ├── scrollToElement.js
-│   │   └── validators.js
-│   │
-│   ├── constants/
-│   │   └── routes.js
-│   │
-│   ├── pages/
-│   │   └── Home.jsx
-│   │
+│   ├── App.css
 │   ├── App.jsx
-│   └── main.jsx
-│
-├── .env
-├── .gitignore
+│   ├── main.jsx
+│   ├── assets/
+│   ├── Components/
+│   │   ├── Extra-Button/
+│   │   │   ├── Button.css
+│   │   │   └── Button.jsx
+│   │   ├── SectionHeader/
+│   │   │   ├── SectionHeader.css
+│   │   │   └── SectionHeader.jsx
+│   │   └── utils/
+│   │       ├── PlanetImages.jsx
+│   │       └── ScrollSection.jsx
+│   ├── Features/
+│   │   ├── Contacts/
+│   │   │   ├── ContactForm.css
+│   │   │   └── ContactForm.jsx
+│   │   ├── Facts/
+│   │   │   ├── FactsSection.css
+│   │   │   └── FactsSection.jsx
+│   │   ├── Footer/
+│   │   │   ├── Footer.css
+│   │   │   └── Footer.jsx
+│   │   ├── Headers/
+│   │   │   ├── Header.css
+│   │   │   └── Header.jsx
+│   │   ├── Planets/
+│   │   │   ├── PlanetSection.css
+│   │   │   └── PlanetSection.jsx
+│   │   └── Videos/
+│   │       ├── VideoSection.css
+│   │       └── VideoSection.jsx
+│   └── App.css
+│   ├── App.jsx
+│   ├── main.jsx
+    |── utils/
+│       ├── PlanetImages.jsx
+│       └── ScrollSection.jsx
+|
+├── eslint.config.js
+├── index.html
 ├── package.json
 ├── README.md
 └── vite.config.js
@@ -69,53 +62,60 @@ capstone-project/
 
 ## Folder Breakdown
 
-### `features/`
-Self-contained feature modules. Each feature owns its own components, logic, and utilities.
+### `src/Components/`
+Reusable UI components and section-level widgets.
 
-- **`hero/`** — Hero section component and its styles.
-- **`planets/`** — Full-featured planets module:
-  - `api/` — Raw API call functions (e.g., fetch from a planets API).
-  - `hooks/` — Custom React hooks (e.g., `usePlanets` for data fetching logic).
-  - `pages/` — The planet detail/listing page component.
-  - `services/` — Business logic layer between the API and the UI.
-  - `utils/` — Feature-specific helpers (e.g., formatting distance values).
-- **`video/`** — Video section component.
-- **`facts/`** — Facts section component.
-- **`contact/`** — Contact section, form validation logic, and contact submission service.
+- `Extra-Button/` — Button component and styles.
+- `SectionHeader/` — Section header component and styles.
+- `utils/` — Shared component helpers like images and scroll behavior.
 
-### `hooks/`
-Shared custom React hooks used across multiple features.
+### `src/Features/`
+Feature sections for the main page.
 
-- `useScrollToSection.js` — Handles smooth scrolling to a page section.
-- `useFetch.js` — Generic data fetching hook.
+- `Contacts/` — Contact form layout and styles.
+- `Facts/` — Facts section component.
+- `Footer/` — Footer area component.
+- `Headers/` — Header component and styles.
+- `Planets/` — Planets section component.
+- `Videos/` — Video section component.
 
-### `services/`
-Global service configuration.
+### `src/`
+Top-level app files.
 
-- `axios.js` — Axios instance with base URL, headers, and interceptors.
+- `App.jsx` — Main application component.
+- `App.css` — Global styles.
+- `main.jsx` — React entry point.
 
-### `utils/`
-Shared utility functions used throughout the app.
+### `public/`
+Static assets served by Vite.
 
-- `scrollToElement.js` — DOM helper for scrolling to elements.
-- `validators.js` — Common validation logic (e.g., email, required fields).
-
-### `constants/`
-App-wide constant values.
-
-- `routes.js` — Route path definitions.
-
-### `pages/`
-Top-level page components rendered by the router.
-
-- `Home.jsx` — The main home page, composing feature sections together.
+- `_redirects` — Redirect rules for hosting.
 
 ### Root files
 
-- `App.jsx` — Root component; sets up routing and global providers.
-- `main.jsx` — Entry point; renders `App` into the DOM.
-- `.env` — Environment variables (e.g., API base URL). **Not committed to version control.**
-- `vite.config.js` — Vite build configuration.
+- `eslint.config.js` — ESLint configuration.
+- `index.html` — HTML app shell.
+- `package.json` — Dependencies and npm scripts.
+- `README.md` — Project documentation.
+- `vite.config.js` — Vite configuration.
+
+---
+
+## Reports
+
+### Project Overview
+This is the capstone project for group 14 which has been hosted on netlify with this link "https://capstone-project-14.netlify.app/". 
+
+### Feature Status
+We had issues with the endpoint for rendering images and submitting form which made us to inolve backup images in the planet sections and also used proxy in the form submission sections.
+### Names, Github link, and contributions of member.
+* Igba Simon (Group lead), Link : "https://github.com/simonigba/CAPSTONE", Contribution: I worked as the group lead, I worked on the image, video sections, and I lead in the building the components(Button and header), and the form section.
+* Agbaje Abdulwasiu O (Assistant Lead), Link: "https://github.com/Olakiitan20", Contribution: He worked on the header and footer sections in collaboration with others contribution.
+* Edward isaac, Link: "https://github.com/Edwardisaac4", Contribution: Worked on the table sections.
+* keke Otis, Link: "https://github.com/kekeotis", Contribution: He fixed the back up images since the Api images was breaking and not returning well.
+* Irene Iruoma, Link: "https://github.com/IreneIruoma", Contribution: Fixed the responsiveness of the header section.
+* Wali David, Link: "https://github.com/walidavid", "No project contribution but added his name.
+
 
 ---
 
@@ -129,17 +129,7 @@ Top-level page components rendered by the router.
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/capstone-project.git
-cd capstone-project
 npm install
-```
-
-### Environment Variables
-
-Create a `.env` file in the root directory:
-
-```env
-VITE_API_BASE_URL=https://your-api-url.com
 ```
 
 ### Running the App
@@ -156,9 +146,7 @@ npm run build
 
 ---
 
-## Tech Stack
+## Notes
 
-- **React** — UI library
-- **Vite** — Build tool and dev server
-- **Axios** — HTTP client
-- **React Router** — Client-side routing
+- Add new report content under the `Reports` section above.
+- Keep this README updated when adding or reorganizing components.
